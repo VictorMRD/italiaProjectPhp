@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./onload.css">
+    <link rel="stylesheet" href="./onexit.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="idOverlay" class="overlay"></div>
+    <div id="idExitOverlay" class="ExitOverlay"></div>
+    <div class="container">
+        <p class="title">Inicio de Sesion</p>
+        <div class="inputs">
+            <input placeholder="Usuario o Correo Electronico" id="correo" class="inCorreo">
+            <input placeholder="Contraseña" id="contrasena" class="inContrasena">
+            <button onclick="salida('./homepage.html')" class="boton">Entrar</button>
+        </div>
+    </div>
+    <script src="onexit.js"></script>
+    <script src="onload.js"></script>
+</body>
+</html>
