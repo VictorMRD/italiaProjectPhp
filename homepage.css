@@ -131,3 +131,28 @@ p{
     border: 4px solid black;
     border-top: 0;
 }
+
+@media screen and (max-height: 915px) and (max-width: 414px) {
+    body, html{
+        overflow: scroll;
+        height: 80em;
+    }
+    .mainTitle {
+        font-size: 500%;
+        height: 7%;
+    }
+    .box1{
+        width: 95%;
+        height: 600px;
+    }
+    .flex-container-submenu{
+        width: 90%;
+        height: 500px;
+        margin-right: 0;
+    }
+    .flex-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

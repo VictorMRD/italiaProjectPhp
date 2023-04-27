@@ -16,11 +16,11 @@ body{
 
 @keyframes Border {
     0% {border-color: white;}
-    20% {border-color: yellow;}
-    40% {border-color: red;}
-    60% {border-color: lightgreen;}
-    80% {border-color: pink;}
-    100% {border-color:chartreuse;}
+    20% {border-color: rgb(0, 110, 255);}
+    40% {border-color: rgb(68, 122, 238);}
+    60% {border-color: rgb(67, 103, 180);}
+    80% {border-color: rgb(82, 90, 163);}
+    100% {border-color:white;}
 }
 .container{
     display: flex;
@@ -33,7 +33,7 @@ body{
     border: 6px solid white;
     background-color: black;
     border-radius: 10px;
-    width: 350px;
+    width: 335px;
     height: 350px;
 
     
@@ -84,6 +84,7 @@ input{
     color: white;
     font-weight: bold;
     margin-bottom: 50px;
+    border-bottom: 3px solid white;
 }
 
 
