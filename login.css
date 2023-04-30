@@ -35,6 +35,7 @@ body{
     border-radius: 10px;
     width: 335px;
     height: 350px;
+    padding: 5px;
 
     
     animation-name: Border;
