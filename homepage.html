@@ -6,28 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./homepage.css">
     <link rel="stylesheet" href="./onload.css">
-    <title>Document</title>
+    <title>Life.</title>
 </head>
 <body>
     <div id="idOverlay" class="overlay"></div>
-    <div class="mainTitle">
-        <p>Life.</p>
+    <div id="LifeMessage" onclick="hide(this)"></div>
+    <div id="Message">
+        <div class="Inner-Message">
+            <p>
+                Hola buenas tardes esto es life
+            </p>
+        </div>
+    </div>
+    <div id="LifeTitle" class="mainTitle" onclick="showMessage()">
+        <p>
+            Life.
+        </p>
     </div>
     <div class="flex-container">
         <div class="box1">
-            <p> Hola </p>
-            <div class="options-container">
-                <ul class="options">
-                    <li>Opcion A</li>
-                    <li>Opcion B</li>
-                    <li>Opcion C</li>
-                </ul>
+            <div id="hst" class="inside-box1">
+                <p id="capitulo">Capitulo 1</p>
+                <div class="inside-inside-box1">
+                    <p id="">Decisiones restantes:</p>
+                    <p id="contador">0</p>
+                </div>
+            </div>
+            <div class="historia" id="historia">
+                <h1>Titulo</h1>
+                <p>Contexto de lo que esta pasando.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet tellus libero.
+
+                </p>
+            </div>
+            <p id="optionst" class="options-title" onclick="moveDecisiones(this)">Decisiones</p>
+            <div id="optc" class="options-container">
+                <div class="options">
+                    <div class="option-select">
+                        <p class="option-title">Ira.</p>
+                        <p>Contestas con su mismo impulso,
+                            nadie tiene derecho<br> a hablarte nunca de esa manera.<br><br>
+                            "Desde este momento no me importa lo que te pase, has perdido todo mi maldito respeto".
+                        </p>
+                    </div>
+                    <div class="option-select">
+                        <p class="option-title">Necedad.</p>
+                        <p>No buscas respuesta, no buscas accion, quieres que respeten tu punto de vista sobre otras cosas.<br><br>
+                        "Entiendo lo que dices, pero esta completamente encontra de lo que yo te he dicho, quiero que pienses las cosas de nuevo."</p>
+                    </div>
+                    <div class="option-select">
+                        <p class="option-title">Paz.</p>
+                        <p>Te preocupas por el, no sabes que es lo que pasa por su cabeza, y tomas en cuenta lo que dice.<br><br>
+                        "Se que no quieres escuchar esto, pero no estas pensando claro, debes de tranquilizarte y pensar mejor las cosas."</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="flex-container-submenu">
             <div class="box2">
                 <div class="player-messages-box">
-                    
+                    <div class="player-message">
+                        <p class="player-message-nickname">Nicolas</p>
+                        <p class="player-message-content">Hola buenas tardes.</p>
+                    </div>
                 </div>
                 <div class="inside1-box2">
                     <div class="message-box">

@@ -9,6 +9,7 @@ body,html{
     overflow: hidden;
 
     font-family: American Typewriter, serif;
+    box-sizing: border-box;
 }
 body{
     background-color: black;
@@ -27,8 +28,12 @@ p{
     font-size: 100px;
     width: 100%;
     height: 12%;
+    user-select: none;
 }
-
+.mainTitle p a{
+    color: white;
+    text-decoration: none;
+}
 .flex-container{
     margin: 0px;
 
@@ -57,9 +62,55 @@ p{
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
 }
+.inside-box1{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.inside-inside-box1{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.historia{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+
+
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.historia h1{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 80px;
+    border-radius: 20px;
+}
+
+.historia p{
+    font-size: 50px
+}
+
 .box2{
     height: 100%;
     width: 100%;
@@ -135,34 +186,139 @@ p{
     border: 4px solid black;
     border-top: 0;
 }
-
+.options-title{
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    font-size: 40px;
+    font-weight: bold;
+    border: 5px solid black;
+    border-left: 0;
+    border-right: 0;
+    user-select: none;
+}
+.options-container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
 .options-container ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.options-container{
-    display: flex;
-    justify-content: flex-start;
-    background-color: red;
-    width: 100%;
-}
+
 .options{
-    background-color: blue;
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    height: 80%;
+}
+.options div{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 6px solid rgb(255, 255, 255);
+    height: 70px;
     width: 100%;
-}
-.options li{
-    background-color: rgb(235, 235, 235);
-    border: 5px solid black;
-    width: 100%;
-}
-.options li:first-child{
-    border-bottom: 0;
-}
-.options li:last-child{
-    border-top: 0;
+    height: 90%;
+    transform: translate(0px,0px);
+    transition: transform 0.3s ease-out, box-shadow 0.3s linear, background-color 0.3s linear;
 }
 
+.options div:hover{
+    background-color: rgb(44, 44, 44);
+    transform: translate(0px, -20px);
+    box-shadow: 0px 20px 0px rgb(134, 134, 134); /* add box shadow on hover */
+}
+
+.option-select{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.option-select p {
+    user-select: none;
+}
+.option-select p:last-child{
+    padding-top: 5px;
+    font-size: 23px;
+}
+.option-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 80%;
+    border-bottom: 2px solid white;
+}
+
+#LifeMessage{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    opacity: 0;
+    display: none;
+
+    transition: opacity 0.5s ease-out;
+}
+#Message{
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    z-index: 100000;
+    top: 25%;
+    left: 25%;
+    position: absolute;
+
+    transition: 1s;
+    display: none;
+}
+.Inner-Message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.player-messages-box{
+    box-sizing: border-box;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.player-message{
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid black;
+    padding: 5px;
+}
+.player-message-nickname{
+    font-weight: bold;
+    font-size: 20px;
+}
+.player-message-content{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+}
 @media screen and (max-height: 915px) and (max-width: 414px) {
     body, html{
         overflow: scroll;
